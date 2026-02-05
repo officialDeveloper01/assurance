@@ -1,0 +1,102 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Comic Sans MS", sans-serif;
+  background:linear-gradient(135deg,#050505,#240000);
+  color:white;
+  overflow-y:auto;
+}
+
+.screen{
+  min-height:100vh;
+  padding:20px;
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.screen.active{
+  display:flex;
+}
+
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:2.2rem;
+  margin-bottom:30px;
+}
+
+button{
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,crimson,pink);
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+button:hover{
+  box-shadow:0 0 15px pink;
+}
+
+.letter-box{
+  max-width:700px;
+  width:100%;
+  background:rgba(0,0,0,0.4);
+  padding:25px;
+  border-radius:20px;
+  line-height:1.8;
+  text-align:left;
+}
+
+.line{
+  margin-bottom:18px;
+  opacity:0;
+  animation:fadeIn .8s forwards;
+}
+
+#okayBtn{
+  display:none;
+  margin-top:25px;
+}
+
+.kiss{
+  width:220px;
+  max-width:90%;
+  margin-bottom:25px;
+}
+
+#final h1{
+  font-size:2rem;
+  color:pink;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes fadeIn{
+  to{opacity:1}
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+
+/* Hearts */
+#hearts span{
+  position:absolute;
+  color:crimson;
+  animation:float 8s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh)}
+  to{transform:translateY(-10vh)}
+}

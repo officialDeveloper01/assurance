@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<!-- Screen 1 -->
+<section class="screen active" id="q1">
+  <h1>Can I tell you something from my heart?</h1>
+  <button onclick="goToQ2()">Yes ❤️</button>
+</section>
+
+<!-- Screen 2 -->
+<section class="screen" id="q2">
+  <h1>Promise you’ll read it till the end?</h1>
+  <button onclick="startLetter()">I promise ❤️</button>
+</section>
+
+<!-- Letter -->
+<section class="screen" id="letter">
+  <div class="letter-box" id="letterBox"></div>
+  <button id="okayBtn" onclick="showFinal()">Okay ❤️</button>
+</section>
+
+<!-- Final -->
+<section class="screen" id="final">
+  <img src="https://media.giphy.com/media/gnXG2hODaCOru/giphy.gif" class="kiss">
+  <h1>I LOVE YOU SOOO SOOO MUCHHHH ❤️❤️❤️</h1>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
